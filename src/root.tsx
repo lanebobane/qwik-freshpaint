@@ -6,6 +6,7 @@ import {
   ServiceWorkerRegister,
 } from "@builder.io/qwik-city";
 import { RouterHead } from "./components/router-head/router-head";
+import { FreshpaintLoader } from "./components/freshpaint/freshpaint-loader";
 
 import "./global.css";
 
@@ -27,6 +28,7 @@ export default component$(() => {
             href={`${import.meta.env.BASE_URL}manifest.json`}
           />
         )}
+        <FreshpaintLoader />
         <RouterHead />
         {!isDev && <ServiceWorkerRegister />}
       </head>
