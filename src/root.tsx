@@ -28,7 +28,7 @@ export default component$(() => {
             href={`${import.meta.env.BASE_URL}manifest.json`}
           />
         )}
-        <FreshpaintLoader />
+        <FreshpaintLoader envId='95629632-e650-498b-b78d-98afb6fb7d90' />
         <RouterHead />
         {!isDev && <ServiceWorkerRegister />}
       </head>
